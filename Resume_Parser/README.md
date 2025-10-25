@@ -15,3 +15,32 @@ It uses **spaCy NLP**, **PyMuPDF**, and **python-docx** for text extraction and 
 ---
 
 ## 🧩 Folder Structure
+project_resume/
+│
+├── app.py # Streamlit UI file
+├── parser.py # Resume parsing logic
+├── outputs/ # Output JSON & CSV files (auto-created)
+├── test_resumes/ # Sample resumes for testing
+├── requirements.txt # Python dependencies
+└── README.md # Project documentation
+
+---
+
+## ⚙️ Installation Guide
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/smart-resume-parser.git
+cd smart-resume-parser
+pip install -r requirements.txt
+pip install streamlit spacy pymupdf python-docx pandas
+python -m spacy download en_core_web_sm
+streamlit run app.py
+http://localhost:8501
+📂 Output Files
+
+After successful parsing, output files are saved in /outputs folder as:
+
+filename.json
+
+filename.csv
